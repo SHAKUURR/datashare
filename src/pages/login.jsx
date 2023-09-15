@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/login.css";
 
 function Login() {
@@ -6,7 +7,7 @@ function Login() {
 		<div className="main">
 			<img src="/img/Logo.png" alt="Logo" />
 			<div className="form-container">
-				<div className="header">
+				<div className="headers">
 					<h2>Welcome</h2>
 					<p>Login to your account</p>
 				</div>
@@ -34,12 +35,14 @@ function Login() {
 							style={{ cursor: "pointer" }}
 						></i>
 					</div>
-					<button type="submit">
-						Login{" "}
-						<span className="spinner hide">
-							<i className="fa-solid fa-spinner"></i>
-						</span>
-					</button>
+					<Link to={"/dashboard"}>
+						<button type="submit">
+							Login{" "}
+							<span className="spinner hide">
+								<i className="fa-solid fa-spinner"></i>
+							</span>
+						</button>
+					</Link>
 					<div className="google-login">
 						<img src="/img/Group.png" alt="google logo" />
 						<a href="https://www.google.com">Login with Google</a>
@@ -48,7 +51,9 @@ function Login() {
 				<div className="forgotPassword">
 					<p>
 						Forgot password?{" "}
-						<a href="recover_password.html">Reset password now</a>
+						<Link to={"/recoverpassword"}>
+							<a href="recover_password.html">Reset password now</a>
+						</Link>
 					</p>
 				</div>
 			</div>
