@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function QuickLink() {
 	return (
@@ -11,18 +12,14 @@ function QuickLink() {
 						<p>Add funds</p>
 					</a>
 				</div>
-				<div className="link">
-					<a href="vend-data.html">
-						<i className="fa-regular fa-paper-plane fa-2x"></i>
-						<p>Vend Data</p>
-					</a>
-				</div>
-				<div className="link">
-					<a href="buy-bundle.html">
-						<i className="fa-solid fa-money-bills fa-2x"></i>
-						<p>Buy Data</p>
-					</a>
-				</div>
+				<Link to={"/vendata"} className="link">
+					<i className="fa-regular fa-paper-plane fa-2x"></i>
+					<p>Vend Data</p>
+				</Link>
+				<Link to={"/buybundle"} className="link">
+					<i className="fa-solid fa-money-bills fa-2x"></i>
+					<p>Buy Data</p>
+				</Link>
 				<div className="link">
 					<a href="reset-api-key.html">
 						<i className="fa-solid fa-clock-rotate-left fa-2x"></i>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function TransactionHistory() {
 	return (
 		<section className="transaction">
@@ -41,9 +41,9 @@ function TransactionHistory() {
 					</tr>
 				</tbody>
 			</table>
-			<a href="transactions.html">
+			<Link to={"/transactions"}>
 				<div className="viewmore">View More...</div>
-			</a>
+			</Link>
 		</section>
 	);
 }
