@@ -1,0 +1,108 @@
+.activity-section {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 2rem;
+}
+
+.activity-section .activity {
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 1.6rem;
+  opacity: 0.5;
+}
+
+.activity-section .activity .activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-section .activity .activity-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d41;
+}
+
+.activity-section .activity .activity-header select {
+  border: 1px solid rgba(140, 137, 180, 0.5);
+  border-radius: 0.8rem;
+  height: 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #aeabd8;
+}
+
+.activity-section .activity .activity-main {
+  padding: 0 1rem;
+}
+
+.activity-section .activity .activity-main canvas {
+  width: 100%;
+}
+
+.activity-section .activity .activity-main .legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.activity-section .activity .activity-main .legend .leg {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.activity-section .activity .activity-main .legend .leg .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.activity-section .activity .activity-main .legend .leg .dot1 {
+  background: #00635d;
+}
+
+.activity-section .activity .activity-main .legend .leg .dot2 {
+  background: #08a4bd;
+}
+
+.activity-section .activity .activity-main .view {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #1d1d41;
+  border-radius: 0.8rem;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.activity-section .activity .activity-main .view i {
+  color: #1d1d41;
+}
+
+.activity-section .activity .activity-main .view p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #1d1d41;
+}
+
+/* responsive styles */
+@media (max-width: 65em) {
+  .activity-section {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 60em) {
+  .activity-section {
+    width: 60%;
+  }
+}
+
+@media (max-width: 30em) {
+  .activity-section {
+    width: 100%;
+  }
+}
