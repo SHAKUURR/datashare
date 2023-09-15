@@ -27,17 +27,18 @@ body {
   width: 550px;
 }
 
-.form-container .header {
+.form-container .headers {
   text-align: center;
 }
 
-.form-container .header h2 {
+.form-container .headers h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 60px;
+
 }
 
-.form-container .header p {
+.form-container .headers p {
   font-weight: 400;
   font-size: 1.35rem;
   line-height: 50px;
