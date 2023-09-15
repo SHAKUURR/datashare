@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/sidebar.css";
+import { Link } from "react-router-dom";
 
 function SideBar() {
 	return (
@@ -11,14 +12,14 @@ function SideBar() {
 			</div>
 			<hr />
 			<div className="menu">
-				<a href="./dashboard.html" className="menu-item current-page">
+				<Link to={"/dashboard"} className="menu-item current-page">
 					<i className="fa-solid fa-table fa-lg"></i>
 					<p>DashBoard</p>
-				</a>
-				<a href="./vend-data.html" className="menu-item">
+				</Link>
+				<Link to={"/vendata"} className="menu-item">
 					<i className="fa-regular fa-credit-card fa-lg"></i>
 					<p>Vend Data</p>
-				</a>
+				</Link>
 				<a href="./transactions.html" className="menu-item">
 					<i className="fa-solid fa-list fa-lg"></i>
 					<p>Transactions</p>
