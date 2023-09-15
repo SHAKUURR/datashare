@@ -1,12 +1,11 @@
 import React from "react";
-import "../styles/vendata.css";
-import "../styles/activity.css";
+import "../styles/transactions.css";
 import SideBar from "../components/sidebar";
 import Header from "../components/header";
 import Activity from "../components/activity";
-import Vend from "../components/vendataComponent/vend";
+import TransactionTable from "../components/TransactionComponent/transactionTable";
 
-function VendData() {
+function Transactions() {
 	return (
 		<div className="body">
 			<SideBar />
@@ -21,10 +20,10 @@ function VendData() {
 function MainContent() {
 	return (
 		<section className="main-content">
-			<Vend />
+			<TransactionTable />
 			<Activity />
 		</section>
 	);
 }
 
-export default VendData;
+export default Transactions;

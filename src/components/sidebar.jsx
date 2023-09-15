@@ -20,10 +20,10 @@ function SideBar() {
 					<i className="fa-regular fa-credit-card fa-lg"></i>
 					<p>Vend Data</p>
 				</Link>
-				<a href="./transactions.html" className="menu-item">
+				<Link to={"/transactions"} className="menu-item">
 					<i className="fa-solid fa-list fa-lg"></i>
 					<p>Transactions</p>
-				</a>
+				</Link>
 				<a href="./analytics.html" className="menu-item">
 					<i className="fa-solid fa-chart-line fa-lg"></i>
 					<p>Analytics</p>
@@ -44,10 +44,12 @@ function SideBar() {
 					<p>Help & Support</p>
 				</a>
 			</div>
-			<div className="logout" id="logout">
-				<i className="fa-solid fa-arrow-left"></i>
-				<p>Logout</p>
-			</div>
+			<Link to={"/login"}>
+				<div className="logout" id="logout">
+					<i className="fa-solid fa-arrow-left"></i>
+					<p>Logout</p>
+				</div>
+			</Link>
 		</section>
 	);
 }
