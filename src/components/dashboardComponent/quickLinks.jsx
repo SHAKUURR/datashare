@@ -20,12 +20,10 @@ function QuickLink() {
 					<i className="fa-solid fa-money-bills fa-2x"></i>
 					<p>Buy Data</p>
 				</Link>
-				<div className="link">
-					<a href="reset-api-key.html">
-						<i className="fa-solid fa-clock-rotate-left fa-2x"></i>
-						<p>Reset API key</p>
-					</a>
-				</div>
+				<Link to={"/resetapi"} className="link">
+					<i className="fa-solid fa-clock-rotate-left fa-2x"></i>
+					<p>Reset API key</p>
+				</Link>
 			</div>
 		</section>
 	);

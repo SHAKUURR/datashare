@@ -1,0 +1,92 @@
+@import url(global.css);
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.main-content .profile {
+  font-family: 'Nunito', sans-serif;
+}
+
+.main-content .profile .back {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.profile form {
+  margin-top: 0.5rem;
+  padding: 2rem 1rem 4rem 1rem;
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile form h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--main);
+}
+
+.profile form input {
+  height: 50px;
+  padding: 1rem;
+  background: #f0f7f6;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.profile form input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d7d5ea;
+}
+
+.profile form button[type='submit'] {
+  height: 50px;
+  background: var(--main);
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+.profile form button[type='reset'] {
+  height: 50px;
+  background: transparent;
+  color: var(--main);
+  border: 1px solid var(--main);
+  border-radius: 4px;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+/* responsive styles */
+@media (max-width: 65em) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
