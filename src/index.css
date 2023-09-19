@@ -1,0 +1,48 @@
+:root {
+  --main: #4c849f;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  background: var(--main);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.spinner.hide {
+  display: none;
+}
+
+.spinner {
+  margin-left: 1rem;
+}
+
+.spinner i {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
