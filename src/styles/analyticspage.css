@@ -1,0 +1,100 @@
+@import url(global.css);
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.main-content .bar-chart {
+  font-family: 'Nunito', sans-serif;
+}
+
+.main-content .bar-chart .back {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  margin-right: .5rem;
+}
+
+.main-content .bar-chart .bar {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-content .bar-chart .bar .bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar .bar-header h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1d1d41;
+}
+
+.bar .bar-header .chart-activity {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.bar .bar-header .chart-activity .come {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar .bar-header .chart-activity .come p {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #1d1d41;
+}
+
+.bar .bar-header .chart-activity .come .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+}
+
+.bar .bar-header .chart-activity .come .dot1 {
+  background: var(--main);
+}
+
+.bar .bar-header .chart-activity .come .dot2 {
+  background: #2c5784;
+}
+
+.bar .bar-header .chart-activity select {
+  padding: 5px;
+  border: 1px solid #2c2c73;
+  border-radius: 12px;
+  color: #2c2c73;
+}
+
+.bar canvas {
+  width: 100%;
+}
+
+/* responsive styles */
+@media (max-width: 65em) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
