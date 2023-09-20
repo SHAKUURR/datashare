@@ -41,10 +41,10 @@ function SideBar() {
 					<i className="fa-solid fa-list fa-lg"></i>
 					<p>Transactions</p>
 				</Link>
-				<a href="./analytics.html" className="menu-item">
+				<Link to="/analytics" className="menu-item">
 					<i className="fa-solid fa-chart-line fa-lg"></i>
 					<p>Analytics</p>
-				</a>
+				</Link>
 				<div className="dropdown" data-dropdown>
 					<button className="menu-item link" data-dropdown-button>
 						<i className="fa-solid fa-gear fa-lg"></i>

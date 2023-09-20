@@ -8,11 +8,13 @@ import Transactions from "../pages/transaction";
 import RecoverPassword from "../pages/recoverPassword";
 import RecoverLink from "../pages/recoverLink";
 import ResetApi from "../pages/resetApi";
+import AnalyticsPage from "../pages/analyticspage";
 const pageRoutes = [
 	{ path: "/signup", element: <Register /> },
 	{ path: "/login", element: <Login /> },
 	{ path: "/dashboard", element: <Dashboard /> },
 	{ path: "/recoverpassword", element: <RecoverPassword /> },
+	{ path: "/analytics", element: <AnalyticsPage /> },
 	{ path: "/recoverlink", element: <RecoverLink /> },
 	{ path: "/resetapi", element: <ResetApi /> },
 	{ path: "/vendata", element: <VendData /> },
