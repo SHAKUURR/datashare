@@ -3,7 +3,7 @@
 .body {
   background: #f2f2fa;
   display: grid;
-  grid-template-columns: 1fr 4.5fr;
+  grid-template-columns: 1fr auto;
 }
 
 .sidebar {
@@ -11,6 +11,11 @@
   padding: 2rem;
   background: var(--white);
   font-family: 'Mulish', sans-serif;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .sidebar img {
@@ -74,7 +79,8 @@ hr {
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem;
-  margin-top: 100%;
+  margin-top: 5rem;
+  /* margin-top: 100%; */
   cursor: pointer;
 }
 

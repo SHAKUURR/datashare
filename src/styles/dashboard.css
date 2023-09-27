@@ -3,10 +3,11 @@
 
 .main-content {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 0.8fr 1fr 1.5fr;
+  grid-template-columns: 2.8fr 2.3fr;
+  grid-template-rows: 1fr 1.5fr;
   padding: 1rem;
   gap: 1rem;
+  margin-left: 25rem;
 }
 
 .wallet-section {

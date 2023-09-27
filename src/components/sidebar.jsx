@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/sidebar.css";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function SideBar() {
-	const [currentMenu, setCurrentMenu] = useState("/dashboard");
-	function handleMenuClick(to) {
-		setCurrentMenu(to);
-	}
+	// const [currentMenu, setCurrentMenu] = useState("/dashboard");
+	// function handleMenuClick(to) {
+	// 	setCurrentMenu(to);
+	// }
+	const router = useLocation("/dashboard");
 	return (
 		<section className="sidebar" id="sidebar">
 			<img src="/img/Logo2.png" alt="Data Share Portal Logo" />
@@ -20,9 +21,8 @@ function SideBar() {
 				<Link
 					to={"/dashboard"}
 					className={`menu-item ${
-						currentMenu === "/dashboard" ? "current-page" : ""
+						router.pathname.includes("/dashboard") ? "current-page" : ""
 					}`}
-					onClick={() => handleMenuClick("/dashboard")}
 				>
 					<i className="fa-solid fa-table fa-lg"></i>
 					<p>DashBoard</p>
@@ -30,9 +30,8 @@ function SideBar() {
 				<Link
 					to={"/vendata"}
 					className={`menu-item ${
-						currentMenu === "/vendata" ? "current-page" : ""
+						router.pathname.includes("/vendata") ? "current-page" : ""
 					}`}
-					onClick={() => handleMenuClick("/vendata")}
 				>
 					<i className="fa-regular fa-credit-card fa-lg"></i>
 					<p>Vend Data</p>
