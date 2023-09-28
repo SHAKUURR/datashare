@@ -161,6 +161,12 @@ hr {
   z-index: 10001;
 }
 
+
+
+.dropdown-menu.open {
+  opacity: 1;
+}
+
 .dropdown-menu a {
   color: #333333;
   text-decoration: none;
@@ -187,4 +193,122 @@ hr {
   .sidebar {
     display: none;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.chakra-accordion {
+  border: none;
+  margin-top: 1rem;
+
+
+}
+
+.chakra-accordion button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+
+}
+
+.chakra-accordion button i {
+  color: #999999;
+
+}
+
+/* .chakra-accordion button p {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #11142d;
+  font-family: 'Mulish', sans-serif;
+} */
+
+
+.chakra-accordion .chakra-accordion-panel {
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+
+.chakra-accordion .chakra-accordion-panel a {
+  color: #333333;
+  text-decoration: none;
+  transition: all 1000ms ease;
+}
+
+
+.chakra-accordion .chakra-accordion-panel a:hover {
+  text-decoration: underline;
+}
+
+
+.chakra-accordion .chakra-accordion-panel[aria-expanded="true"] {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+
+.chakra-accordion .chakra-accordion-icon {
+  color: #333333;
+}
+
+.chakra-accordion button[aria-expanded="true"] {
+  background-color: var(--main);
+  color: var(--white);
+  font-family: 'Mulish', sans-serif;
+}
+
+.reset-api-button {
+  background-color: var(--main) !important;
+  color: var(--white);
+  font-family: 'Mulish', sans-serif;
+}
+
+.chakra-accordion button[aria-expanded="true"] i {
+  color: var(--white);
+}
+
+.reset-api-button i {
+  color: var(--white) !important;
+}
+
+.linkk {
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+.linkk a {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #11142d;
+  display: block;
 }

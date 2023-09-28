@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-.main {
+.mainlogin {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -31,17 +31,17 @@ a {
   width: 550px;
 }
 
-.form-container .header {
+.form-container .headerlogin {
   text-align: center;
 }
 
-.form-container .header h2 {
+.form-container .headerlogin h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 60px;
 }
 
-.form-container .header p {
+.form-container .headerlogin p {
   font-weight: 400;
   font-size: 1.35rem;
   line-height: 50px;
@@ -157,12 +157,12 @@ form button {
     width: 100%;
   }
 
-  .form-container .header h2 {
+  .form-container .headerlogin h2 {
     font-size: 20px;
     line-height: 31px;
   }
 
-  .form-container .header p {
+  .form-container .headerlogin p {
     font-size: 14px;
     line-height: 31px;
   }

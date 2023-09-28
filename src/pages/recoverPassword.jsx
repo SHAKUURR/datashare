@@ -10,7 +10,7 @@ function RecoverPassword() {
 				<div className="img-cont">
 					<img src="/img/padlock.png" alt="Padlock" />
 				</div>
-				<div className="header">
+				<div className="headerpassword">
 					<h2>Recover Password</h2>
 					<p>Enter your email to recover your password</p>
 				</div>
@@ -23,9 +23,7 @@ function RecoverPassword() {
 						required
 					/>
 					<Link to={"/recoverlink"}>
-						<a href="link">
-							<button type="submit">Continue</button>
-						</a>
+						<button type="submit">Continue</button>
 					</Link>
 				</form>
 			</div>

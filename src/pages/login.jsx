@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/login.css";
 
@@ -51,9 +50,7 @@ function Login() {
 				<div className="forgotPassword">
 					<p>
 						Forgot password?{" "}
-						<Link to={"/recoverpassword"}>
-							<a href="recover_password.html">Reset password now</a>
-						</Link>
+						<Link to={"/recoverpassword"}>Reset password now</Link>
 					</p>
 				</div>
 			</div>

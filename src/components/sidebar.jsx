@@ -2,6 +2,14 @@ import React from "react";
 import { useState } from "react";
 import "../styles/sidebar.css";
 import { useLocation, Link } from "react-router-dom";
+import {
+	Accordion,
+	AccordionItem,
+	AccordionButton,
+	AccordionPanel,
+	AccordionIcon,
+	Box,
+} from "@chakra-ui/react";
 
 function SideBar() {
 	// const [currentMenu, setCurrentMenu] = useState("/dashboard");
@@ -9,6 +17,11 @@ function SideBar() {
 	// 	setCurrentMenu(to);
 	// }
 	const router = useLocation("/dashboard");
+	// const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+	// const toggleDropdown = () => {
+	// 	setDropdownOpen(!isDropdownOpen);
+	// };
 	return (
 		<section className="sidebar" id="sidebar">
 			<img src="/img/Logo2.png" alt="Data Share Portal Logo" />
@@ -36,7 +49,12 @@ function SideBar() {
 					<i className="fa-regular fa-credit-card fa-lg"></i>
 					<p>Vend Data</p>
 				</Link>
-				<Link to={"/transactions"} className="menu-item">
+				<Link
+					to={"/transactions"}
+					className={`menu-item ${
+						router.pathname.includes("/transactions") ? "current-page" : ""
+					}`}
+				>
 					<i className="fa-solid fa-list fa-lg"></i>
 					<p>Transactions</p>
 				</Link>
@@ -44,17 +62,59 @@ function SideBar() {
 					<i className="fa-solid fa-chart-line fa-lg"></i>
 					<p>Analytics</p>
 				</Link>
-				<div className="dropdown" data-dropdown>
-					<button className="menu-item link" data-dropdown-button>
+				<Accordion allowToggle>
+					<AccordionItem>
+						<h2>
+							<AccordionButton
+								className={`${
+									router.pathname.includes("/resetapi") ||
+									router.pathname.includes("/changepin") ||
+									router.pathname.includes("/changepassword")
+										? "reset-api-button"
+										: ""
+								}`}
+							>
+								<i className="fa-solid fa-gear fa-lg"></i>
+								<Box as="span" flex="1" textAlign="left">
+									Settings
+								</Box>
+								<AccordionIcon />
+							</AccordionButton>
+						</h2>
+						<AccordionPanel pb={4}>
+							<Box className="linkk">
+								<Link to={"/changepassword"} className="sub-link">
+									&#8226; Change Password
+								</Link>
+							</Box>
+							<Box className="linkk">
+								<Link to={"/changepin"} className="sub-link">
+									&#8226; Change Pin
+								</Link>
+							</Box>
+							<Box className="linkk">
+								<Link to={"/resetapi"} className="sub-link">
+									&#8226; Reset API Key
+								</Link>
+							</Box>
+						</AccordionPanel>
+					</AccordionItem>
+				</Accordion>
+				{/* <div className="dropdown" data-dropdown>
+					<button
+						className="menu-item link"
+						data-dropdown-button
+						onClick={toggleDropdown}
+					>
 						<i className="fa-solid fa-gear fa-lg"></i>
 						<p>Settings</p>
 					</button>
-					<div className="dropdown-menu">
+					<div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
 						<a href="change-password.html">Change Password</a>
 						<a href="change-pin.html">Change Pin</a>
 						<a href="reset-api-key.html">Reset API Key</a>
 					</div>
-				</div>
+				</div> */}
 				<a href="./help.html" className="menu-item">
 					<i className="fa-regular fa-user fa-lg"></i>
 					<p>Help & Support</p>
