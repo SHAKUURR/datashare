@@ -1,13 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/signup.css";
 
 function Register() {
 	return (
-		<div className="main">
+		<div className="mainlogin">
 			<img src="/img/Logo.png" alt="Data Share Portal Logo" />
 			<div className="form-container">
-				<div className="header">
+				<div className="headerlogin">
 					<h1>Create an Account</h1>
 					<p>Let's get you started</p>
 				</div>

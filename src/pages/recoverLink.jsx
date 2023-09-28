@@ -4,13 +4,13 @@ import "../styles/recoverLink.css";
 
 function RecoverLink() {
 	return (
-		<div class="main-container">
+		<div className="main-container">
 			<img src="/img/logo.png" alt="Topitup Logo" />
-			<div class="reset-link-form-container">
-				<div class="img-cont">
+			<div className="reset-link-form-container">
+				<div className="img-cont">
 					<img src="/img/message.png" alt="Envelope" />
 				</div>
-				<div class="text-content">
+				<div className="text-content">
 					<h2>Reset link sent</h2>
 					<p>
 						Please click link sent to your Email to reset password. If you do
@@ -19,9 +19,7 @@ function RecoverLink() {
 					</p>
 				</div>
 				<Link to={"/login"}>
-					<a href="login">
-						<button>Return to login</button>
-					</a>
+					<button>Return to login</button>
 				</Link>
 			</div>
 		</div>
