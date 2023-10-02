@@ -10,7 +10,7 @@ import {
 	Box,
 } from "@chakra-ui/react";
 
-function SideBar() {
+function AdminSideBar() {
 	// const [currentMenu, setCurrentMenu] = useState("/dashboard");
 	// function handleMenuClick(to) {
 	// 	setCurrentMenu(to);
@@ -99,24 +99,21 @@ function SideBar() {
 						</AccordionPanel>
 					</AccordionItem>
 				</Accordion>
-				{/* <div className="dropdown" data-dropdown>
-					<button
-						className="menu-item link"
-						data-dropdown-button
-						onClick={toggleDropdown}
-					>
-						<i className="fa-solid fa-gear fa-lg"></i>
-						<p>Settings</p>
-					</button>
-					<div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
-						<a href="change-password.html">Change Password</a>
-						<a href="change-pin.html">Change Pin</a>
-						<a href="reset-api-key.html">Reset API Key</a>
-					</div>
-				</div> */}
-				<a href="./help.html" className="menu-item">
-					<i className="fa-regular fa-user fa-lg"></i>
-					<p>Help & Support</p>
+				<a href="./api-setup.html" class="menu-item">
+					<i class="fa-solid fa-sliders fa-lg"></i>
+					<p>API Setup</p>
+				</a>
+				<a href="./set-rates.html" class="menu-item">
+					<i class="fa-solid fa-chart-simple"></i>
+					<p>Set Rates</p>
+				</a>
+				<a href="./routing1.html" class="menu-item">
+					<i class="fa-solid fa-sliders fa-lg"></i>
+					<p>Routing</p>
+				</a>
+				<a href="./vendors.html" class="menu-item">
+					<i class="fa-solid fa-sliders fa-lg"></i>
+					<p>Vendors</p>
 				</a>
 			</div>
 			<Link to={"/login"}>
@@ -129,4 +126,4 @@ function SideBar() {
 	);
 }
 
-export default SideBar;
+export default AdminSideBar;
