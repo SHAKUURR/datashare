@@ -11,6 +11,7 @@ import ResetApi from "../pages/resetApi";
 import AnalyticsPage from "../pages/analyticspage";
 import ChangePassword from "../pages/changePassword";
 import ChangePin from "../pages/changePin";
+import AdminDashboard from "../adminPages/adminDashboard";
 const pageRoutes = [
 	{ path: "/signup", element: <Register /> },
 	{ path: "/login", element: <Login /> },
@@ -24,5 +25,6 @@ const pageRoutes = [
 	{ path: "/vendata", element: <VendData /> },
 	{ path: "/transactions", element: <Transactions /> },
 	{ path: "/buybundle", element: <BuyBundle /> },
+	{ path: "/adminDashboard", element: <AdminDashboard /> },
 ];
 export default pageRoutes;
