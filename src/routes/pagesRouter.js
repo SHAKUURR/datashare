@@ -13,6 +13,8 @@ import ChangePassword from "../pages/changePassword";
 import ChangePin from "../pages/changePin";
 import AdminDashboard from "../adminPages/adminDashboard";
 import ManageUser from "../adminPages/manage-user";
+import CreditUser from "../adminPages/credit-user";
+import SetRates from "../adminPages/set-rates";
 const pageRoutes = [
 	{ path: "/signup", element: <Register /> },
 	{ path: "/login", element: <Login /> },
@@ -28,5 +30,7 @@ const pageRoutes = [
 	{ path: "/buybundle", element: <BuyBundle /> },
 	{ path: "/adminDashboard", element: <AdminDashboard /> },
 	{ path: "/manage-user", element: <ManageUser /> },
+	{ path: "/credit-user", element: <CreditUser /> },
+	{ path: "/set-rate", element: <SetRates /> },
 ];
 export default pageRoutes;

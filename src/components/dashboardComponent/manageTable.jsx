@@ -1,9 +1,11 @@
 export default function ManageTable() {
+	function handleBackClick() {
+		window.history.back();
+	}
 	return (
 		<div className="table">
-			<div className="back clickable">
-				<i classname="fa-solid fa-arrow-left"></i>
-				<p>Back</p>
+			<div onClick={handleBackClick} className="clickable back">
+				<i className="fa-solid fa-arrow-left"></i> Back
 			</div>
 			<div className="table-container">
 				<table>
@@ -93,7 +95,7 @@ export default function ManageTable() {
 						<td>
 							<div className="account">
 								<div className="img"></div>
-								<div class="text">
+								<div className="text">
 									<h5>Ahmed Tinubu</h5>
 									<p>emilokan@gmail.com</p>
 								</div>

@@ -11,16 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 function SideBar() {
-	// const [currentMenu, setCurrentMenu] = useState("/dashboard");
-	// function handleMenuClick(to) {
-	// 	setCurrentMenu(to);
-	// }
 	const router = useLocation("/dashboard");
-	// const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-	// const toggleDropdown = () => {
-	// 	setDropdownOpen(!isDropdownOpen);
-	// };
 	return (
 		<section className="sidebar" id="sidebar">
 			<img src="/img/Logo2.png" alt="Data Share Portal Logo" />
@@ -99,21 +90,6 @@ function SideBar() {
 						</AccordionPanel>
 					</AccordionItem>
 				</Accordion>
-				{/* <div className="dropdown" data-dropdown>
-					<button
-						className="menu-item link"
-						data-dropdown-button
-						onClick={toggleDropdown}
-					>
-						<i className="fa-solid fa-gear fa-lg"></i>
-						<p>Settings</p>
-					</button>
-					<div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
-						<a href="change-password.html">Change Password</a>
-						<a href="change-pin.html">Change Pin</a>
-						<a href="reset-api-key.html">Reset API Key</a>
-					</div>
-				</div> */}
 				<a href="./help.html" className="menu-item">
 					<i className="fa-regular fa-user fa-lg"></i>
 					<p>Help & Support</p>

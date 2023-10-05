@@ -31,9 +31,12 @@ function AdminSideBar() {
 			<hr />
 			<div className="menu">
 				<Link
-					to={"/dashboard"}
+					to={"/admindashboard"}
 					className={`menu-item ${
-						router.pathname.includes("/dashboard") ? "current-page" : ""
+						router.pathname.includes("/admindashboard") ||
+						router.pathname.includes("/manage-user")
+							? "current-page"
+							: ""
 					}`}
 				>
 					<i className="fa-solid fa-table fa-lg"></i>
@@ -99,20 +102,20 @@ function AdminSideBar() {
 						</AccordionPanel>
 					</AccordionItem>
 				</Accordion>
-				<a href="./api-setup.html" class="menu-item">
-					<i class="fa-solid fa-sliders fa-lg"></i>
+				<a href="./api-setup.html" className="menu-item">
+					<i className="fa-solid fa-sliders fa-lg"></i>
 					<p>API Setup</p>
 				</a>
-				<a href="./set-rates.html" class="menu-item">
-					<i class="fa-solid fa-chart-simple"></i>
+				<Link to={"/set-rate"} className="menu-item">
+					<i className="fa-solid fa-chart-simple"></i>
 					<p>Set Rates</p>
-				</a>
-				<a href="./routing1.html" class="menu-item">
-					<i class="fa-solid fa-sliders fa-lg"></i>
+				</Link>
+				<a href="./routing1.html" className="menu-item">
+					<i className="fa-solid fa-sliders fa-lg"></i>
 					<p>Routing</p>
 				</a>
-				<a href="./vendors.html" class="menu-item">
-					<i class="fa-solid fa-sliders fa-lg"></i>
+				<a href="./vendors.html" className="menu-item">
+					<i className="fa-solid fa-sliders fa-lg"></i>
 					<p>Vendors</p>
 				</a>
 			</div>

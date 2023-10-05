@@ -1,0 +1,92 @@
+.main-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  margin-left: 25rem;
+}
+
+.main-content .rates {
+  font-family: 'Nunito', sans-serif;
+}
+
+.main-content .rates .back {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  margin-right: .5rem;
+}
+
+.rates form {
+  margin-top: 0.5rem;
+  padding: 2rem 1rem 4rem 1rem;
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rates form h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #5e548e;
+}
+
+.rates form .rate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.rates form select,
+.rates form input {
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 8px;
+  width: 100%;
+}
+
+.rates form button[type='submit'] {
+  height: 45px;
+  background: var(--main);
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.rates form button[type='reset'] {
+  height: 45px;
+  background: transparent;
+  color: #3e396b;
+  border: 1px solid #5e548e;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* responsive styling */
+@media (max-width: 65em) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
